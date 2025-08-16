@@ -1,0 +1,38 @@
+//inclusão da biblioteca
+#include <stdio.h>
+
+int main() {
+    //declaração de variáveis
+    char nome[50];
+    int idade;
+    float nota1, nota2, media;
+    
+    //entrada do nome
+    printf("Digite seu nome completo: ");
+    scanf("%[^\n]s", nome);
+    
+    //entrada da idade
+    printf("Digite sua idade: ");
+    scanf("%d", &idade);
+    
+    //entrada da primeira nota
+    printf("Digite sua primeira nota: ");
+    scanf("%f", &nota1);
+    
+    
+    //entrada da segunda nota
+    printf("Digite sua segunda nota: ");
+    scanf("%f", &nota2);
+    
+    //cálculo da média
+    media = (nota1 + nota2) / 2;
+    
+    //saída do resultado lógico da média
+    printf("\nMédia maior ou igual a 7?: %d", media >= 7.0);
+    
+    //saída do resultado lógico da idade
+    printf("\nIdade menor que 18 anos?: %d", idade < 18);
+    
+
+    return 0;
+}
