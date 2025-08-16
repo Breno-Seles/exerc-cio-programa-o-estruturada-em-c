@@ -1,0 +1,27 @@
+//incluir biblioteca
+#include <stdio.h>
+
+//função main
+int main() {
+    //declaração de variáveis
+    char nome[50];
+    int idade;
+    float altura;
+
+    //entrada do nome (utilização de "[^\n]" para considerar caracteres após espaço)
+    printf("Insira seu nome completo: ");
+    scanf("%[^\n]s", nome);
+    
+    //entrada da idade
+    printf("Insira sua idade: ");
+    scanf("%d", &idade);
+    
+    //entrada da altura
+    printf("Insira sua altura em metros: ");
+    scanf("%f", &altura);
+    
+    
+    //saída incluindo os dados inseridos
+    printf("\nBem vindo %s. Você tem %d anos e mede %.2f metros.", nome, idade, altura);
+    return 0;
+}
