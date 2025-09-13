@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    int i=0;
+    float num, media, acumulado=0;
+    do {
+        printf("Digite um valor: ");
+        scanf("%f", &num);
+        if(num > 0){
+            acumulado += num;
+            i++;
+        }
+    } while(num != 0);
+    
+    media = acumulado / i;
+    
+    printf("A média dos valores positivos inseridos é %f", media);
+
+    return 0;
+}
