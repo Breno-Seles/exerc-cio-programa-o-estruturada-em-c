@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int i = 0;
+    int j = 0;
+    int k = 0;
+    float nota = 0.0;
+    float acumulada = 0.0;
+    float media = 0.0;
+    
+    while(i != -1) {
+        printf("Insira um número (-1 para sair): ");
+        scanf("%d", &i);
+    }
+    
+    while(j < 5) {
+        printf("%d\n", j);
+        j++;
+    }
+    
+    while(k < 5) {
+        printf("\nInsira a nota do aluno: ");
+        scanf("%f", &nota);
+        acumulada += nota;
+        printf("%.2f\n", acumulada);
+        k++;
+    }
+    
+    media = acumulada / 5;
+    
+    printf("\n\nMédia da sala: %.2f", media);
+    
+    return 0;
+}
